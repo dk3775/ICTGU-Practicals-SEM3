@@ -1,0 +1,33 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Box{
+    int length,breadth,height;
+    Box(int length,int breadth,int height){
+        this.length=length;
+        this.breadth=breadth;
+        this.height=height;
+    }
+    int volume(){
+        return length*breadth*height;
+    }
+    void display(){
+        System.out.println(length+" "+breadth+" "+height+" "+volume());
+    }
+}
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+        Scanner sc=new Scanner(System.in);
+        int length=sc.nextInt();
+        int breadth=sc.nextInt();
+        int height=sc.nextInt();
+        Box b=new Box(length,breadth,height);
+        b.display();
+	}
+}
